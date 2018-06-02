@@ -15,4 +15,15 @@ public class ArraysCompareTest {
     assertArrayEquals(expected, numbers);
   }
 
+  @Test(expected = NullPointerException.class)
+  public void testArraySort_NullArray() {
+    int[] numbers = null;
+    Arrays.sort(numbers);
+  }
+  
+  @Test
+  public void testArraySort_EmptyArray() {
+    int[] numbers = {};
+    Arrays.sort(numbers);
+  }
 }
