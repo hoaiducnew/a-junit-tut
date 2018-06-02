@@ -3,11 +3,17 @@ package com.example.junitbasic.helper;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+import org.junit.Before;
 import org.junit.Test;
 
 public class StringHelperTest {
 
-  StringHelper helper = new StringHelper();
+  StringHelper helper;
+  
+  @Before
+  public void setUp() {
+    helper = new StringHelper();
+  }
 
   @Test
   public void testTruncateAInFirst2Positions_AinFirst2Positions() {
