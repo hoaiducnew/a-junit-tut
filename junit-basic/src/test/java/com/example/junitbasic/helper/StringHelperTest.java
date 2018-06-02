@@ -5,11 +5,16 @@ import org.junit.Test;
 
 public class StringHelperTest {
 
+  StringHelper helper = new StringHelper();
+
   @Test
-  public void test() {
-    StringHelper helper = new StringHelper();
+  public void testTruncateAInFirst2Positions_AinFirst2Positions() {
     assertEquals("CD", helper.truncateAInFirst2Positions("AACD"));
-    assertEquals("CD", helper.truncateAInFirst2Positions("ACD"));
   }
 
+  @Test
+  public void testTruncateAInFirst2Positions_AinFirstPosition() {
+    assertEquals("CD", helper.truncateAInFirst2Positions("ACD"));
+  }
+  
 }
