@@ -1,11 +1,11 @@
-package com.example.mockitotut01.data.stub.business;
+package com.example.business;
 
 import static org.junit.Assert.assertEquals;
 import java.util.List;
 import org.junit.Test;
 import com.example.business.TodoBusinessImpl;
 import com.example.data.api.TodoService;
-import com.example.mockitotut01.data.stub.TodoServiceStub;
+import com.example.data.api.TodoServiceStub;
 
 public class TodoBusinessImplStubTest {
 

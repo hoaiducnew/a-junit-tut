@@ -1,4 +1,4 @@
-package com.example.mockitotut01.data.stub.business;
+package com.example.business;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertEquals;

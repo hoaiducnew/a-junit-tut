@@ -1,4 +1,4 @@
-package com.example.mockitotut01.data.stub;
+package com.example.data.api;
 
 import java.util.Arrays;
 import java.util.List;
