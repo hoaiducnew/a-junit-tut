@@ -1,7 +1,10 @@
 package com.example.mockitotut01.data.stub.business;
 
+import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertThat;
+import static org.mockito.BDDMockito.given;
 import static org.mockito.Matchers.anyInt;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -49,15 +52,17 @@ public class ListTest {
     assertEquals("Duke", list.get(1));
   }
 
-  // @Test
-  // public void bddAliases_UsingGivenWillReturn() {
-  // List<String> list = mock(List.class);
-  //
-  // // given
-  // given(list.get(Mockito.anyInt())).willReturn("in28Minutes");
-  //
-  // // then
-  // assertThat("in28Minutes", is(list.get(0)));
-  // assertThat("in28Minutes", is(list.get(0)));
-  // }
+  @Test
+  public void bddAliases_UsingGivenWillReturn() {
+    List<String> list = mock(List.class);
+
+    // given
+    given(list.get(anyInt())).willReturn("Duke");
+    
+    // when
+    String firstElement = list.get(0);
+
+    // then
+    assertThat(firstElement, is(firstElement));
+  }
 }
