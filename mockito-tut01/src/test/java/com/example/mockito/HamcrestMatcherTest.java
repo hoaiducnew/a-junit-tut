@@ -1,4 +1,4 @@
-package com.example.business;
+package com.example.mockito;
 
 import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.MatcherAssert.assertThat;
